@@ -1,1 +1,1 @@
-# manage-it- Project Management Tool
+# manage.it - Project Management Tool
