@@ -7,7 +7,7 @@ import { DELETE_PROJECT } from "../mutations/projectMutations";
 export default function DeleteProjectButton({ projectId }) {
   const navigate = useNavigate();
 
-  const [deleteProject, { loading, error }] = useMutation(DELETE_PROJECT, {
+  const [deleteProject] = useMutation(DELETE_PROJECT, {
     variables: { id: projectId },
     onCompleted: () => navigate("/"),
     refetchQueries: [{ query: GET_PROJECTS }],
